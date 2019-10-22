@@ -82,6 +82,7 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
+config.env
 .env
 .venv
 env/
@@ -89,6 +90,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+webhook-bot/config.env
 
 # Spyder project settings
 .spyderproject

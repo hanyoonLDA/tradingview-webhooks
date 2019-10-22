@@ -1,12 +1,10 @@
 ![demopic](img/webhooks_bot_logo.png)
 
-![](https://img.shields.io/github/license/robswc/tradingview-webhooks-bot?style=for-the-badge)
-![](https://img.shields.io/github/repo-size/robswc/tradingview-webhooks-bot?style=for-the-badge)
-![](https://img.shields.io/github/commit-activity/y/robswc/tradingview-webhooks-bot?style=for-the-badge)
-![](https://img.shields.io/twitter/follow/robswc?style=for-the-badge)
+# Lunar Digital Assets Collaboration
 
+This branch is maintained a developed by Lunar Digital Assets with the help of @robswc - Feel free to pitch in!
 
-
+![LDA](https://i.imgur.com/UtMlvu0.png)
 
 # Tradingview-webhooks-bot
 
