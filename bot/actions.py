@@ -201,9 +201,9 @@ def post_processing(data, order):
     logger.info('Avail. Balance: {} BTC | Curr. Position Size: {} | Avg. Position Entry: {} | Open Orders: {}', free_balance, position_size, avg_entry, len(open_orders))
 
 
-exchange_id = str(os.getenv("EXCHANGE"))
-exchange_key = str(os.getenv("EXCHANGE_API"))
-exchange_secret = str(os.getenv("EXCHANGE_SECRET"))
+exchange_id = os.getenv("EXCHANGE")
+exchange_key = os.getenv("EXCHANGE_API")
+exchange_secret = os.getenv("EXCHANGE_SECRET")
 print(exchange_id)
 print(type(exchange_id))
 ccxt_ex = getattr(ccxt, exchange_id)({
