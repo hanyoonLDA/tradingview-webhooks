@@ -1,14 +1,12 @@
-![demopic](img/webhooks_bot_logo.png)
+# Lunar Digital Assets
 
-# Lunar Digital Assets Collaboration
-
-This branch is maintained a developed by Lunar Digital Assets with the help of @robswc - Feel free to pitch in!
+This repo is maintained a developed by the Lunar Labs division of Lunar Digital Assets - Feel free to pitch in!
 
 ![LDA](https://i.imgur.com/UtMlvu0.png)
 
-# Tradingview-webhooks-bot
+# tradingview-webhooks
 
-tradingview-webhooks-bot is a trading bot, written in python that allows users to place trades with tradingview's webhook alerts.
+tradingview-webhooks is a trading bot, written in python that allows users to place trades with tradingview's webhook alerts. Originally inspired by @robswc.
 
 ---
 

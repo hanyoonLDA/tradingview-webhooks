@@ -1,12 +1,5 @@
 """
-Tradingview-webhooks-bot is a python bot that works with tradingview's webhook alerts!
-This bot is not affiliated with tradingview and was created by @robswc
-
-You can follow development on github at: github.com/robswc/tradingview-webhook-bot
-
-I'll include as much documentation here and on the repo's wiki!  I
-expect to update this as much as possible to add features as they become available!
-Until then, if you run into any bugs let me know!
+Lunar Labs Production
 """
 import sys
 from actions import send_order, parse_webhook, process_alert, get_acctstatus
@@ -41,7 +34,7 @@ def root():
     return 'Online.'
 
 @logger.catch
-@app.route('/webhook', methods=['POST'])
+@app.route('/incoming', methods=['POST'])
 def webhook():
     if request.method == 'POST':
         # Parse the string data from tradingview into a python dict

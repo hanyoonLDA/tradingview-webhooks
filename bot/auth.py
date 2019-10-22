@@ -1,11 +1,13 @@
 import hashlib
+from dotenv import load_dotenv
+load_dotenv(dotenv_path='config.env')
 
 """
 Planning to add more here eventually, for now will be used for handling keys.
 """
 
 # Set this to something unique.
-pin = '1234'
+pin = os.getenv("USER_PIN")
 
 
 # Generate unique token from pin.  This adds a marginal amount of security.

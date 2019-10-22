@@ -8,6 +8,8 @@ from core.talib import TechnicalAnalysis
 from pprint import pprint
 from loguru import logger
 
+load_dotenv(dotenv_path='config.env')
+
 
 def parse_webhook(webhook_data):
 
@@ -199,7 +201,6 @@ def post_processing(data, order):
     logger.info('Avail. Balance: {} BTC | Curr. Position Size: {} | Avg. Position Entry: {} | Open Orders: {}', free_balance, position_size, avg_entry, len(open_orders))
 
 
-load_dotenv(dotenv_path='config.env')
 exchange_id = os.getenv("EXCHANGE")
 exchange_key = os.getenv("EXCHANGE_API")
 exchange_secret = os.getenv("EXCHANGE_SECRET")
@@ -213,16 +214,16 @@ ccxt_ex = getattr(ccxt, exchange_id)({
     'verbose': False,
     'enableRateLimit': True,
 })
-ccxt_async = getattr(ccxt, exchange_id)({
-    'urls':{
-        'api':'https://testnet.bitmex.com'
-    },
-    'apiKey': exchange_key,
-    'secret': exchange_secret,
-    'verbose': False,
-    'enableRateLimit': True,
-})
-
 exchange = CryptoExchange(ccxt_ex)
-#exchangeAsync = AsyncExchange(ccxt_async)
 trade = TradeExecutor(exchange)
+
+# ccxt_async = getattr(ccxt, exchange_id)({
+#     'urls':{
+#         'api':'https://testnet.bitmex.com'
+#     },
+#     'apiKey': exchange_key,
+#     'secret': exchange_secret,
+#     'verbose': False,
+#     'enableRateLimit': True,
+# })
+#exchangeAsync = AsyncExchange(ccxt_async)
